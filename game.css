@@ -2,6 +2,7 @@
   width: 600px;
   height: 200px;
   border: 1px solid black;
+  background-color: black;
  margin: auto;
 }
 
@@ -30,14 +31,38 @@ background-size: 50px 50px;
 }
 
 50% {
-  top: 80px;
+  top: 40px;
   }
 
 80% {
-  top: 130px;
+  top: 90px;
 }
 
 100% {
   top: 150px;
 }
+}
+
+
+#obstacle {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+
+  background-image: url(./portal.gif);
+  background-size: 20px 40px;
+
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 580px;
+  }
+
+  100% {
+    left: -20px
+  }
 }
