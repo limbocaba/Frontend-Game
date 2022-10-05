@@ -2,7 +2,7 @@
   width: 600px;
   height: 200px;
   border: 1px solid white;
-  background-color: black;
+  background-color: #111216;
   margin: auto;
 }
 
@@ -17,13 +17,23 @@ body {
   background-size: 50px 50px;
   position: relative;
   top: 150px;
+  /* animation-timing-function: linear; */
 }
 
 .jump {
-  animation: jump 0.4s linear;
+  animation: jump 0.4s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.1, 0.4)
 }
 
 @keyframes jump {
+
+    /* from {
+        transform: translate3d(0, 0, 0); JUMPS REALLY HIGH
+    }
+    to {
+        transform: translate3d(0, -150px, 0);
+    } */
   0% {
     top: 150px;
   }
@@ -31,7 +41,6 @@ body {
   10% {
     top: 130px;
   }
-
   20% {
     top: 120px;
   }
@@ -75,7 +84,7 @@ body {
   background-image: url(./portal.gif);
   background-size: 50px 70px;
 
-  animation: block 1s infinite linear;
+  /* animation: block 1s infinite linear; */
 }
 
 @keyframes block {
