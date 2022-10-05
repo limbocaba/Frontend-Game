@@ -1,9 +1,18 @@
+/* font-family: 'Press Start 2P', cursive <= this is for the game over message */
+
+
 .game {
   width: 600px;
   height: 200px;
   border: 1px solid white;
   background-color: #111216;
   margin: auto;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 body {
