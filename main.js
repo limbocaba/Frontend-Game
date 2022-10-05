@@ -7,7 +7,7 @@ function jump() {
 
     setTimeout(function () {
       morty.classList.remove("jump")
-    }, 300)
+    }, 400)
   }
 }
 
