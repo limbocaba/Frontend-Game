@@ -36,6 +36,8 @@ let isAlive = setInterval(() => {
   if (shipLeft < 50 && shipLeft > 0 && mortyTop == 120) {
     alert("Duck next time. You LOSE!");
   }
+
+  // if ship in inside div and morty is at top 120, collide
 }, 10);
 
 document.addEventListener("keydown", function (event) {
