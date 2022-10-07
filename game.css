@@ -64,7 +64,7 @@ top:150px
   background-image: url(./portal.gif);
   background-size: 50px 70px;
 
-  /* animation: block 2.5s infinite linear; */
+  animation: block 2.5s infinite linear;
 }
 
 @keyframes block {
@@ -87,7 +87,7 @@ top:150px
  background-image: url("RickShip.png");
  background-size: 60px 60px;
 
-  animation: block 5s infinite linear;
+  animation: block 10s infinite linear;
 }
 
 #detection  {

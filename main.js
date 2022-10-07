@@ -1,6 +1,7 @@
 const morty = document.getElementById("figure");
 const portal = document.getElementById("obstacle");
 const ship = document.getElementById("ship");
+const game = document.querySelector('.game')
 
 function jump() {
   if (morty.classList != "jump") {
@@ -31,9 +32,10 @@ let isAlive = setInterval(() => {
   if (portalLeft < 30 && portalLeft > 0 && mortyTop >= 130) {
     console.log("collision");
     alert("Wubba Lubba Dub Dub, YOU LOSE!");
+    // game.style.background = "red"
   }
   // detect ship collision
-  if (shipLeft < 0 && shipLeft > 0 && mortyTop == 120) {
+  if (shipLeft < 30 && shipLeft > 0 && mortyTop <= 120) {
     alert("Duck next time. You LOSE!");
   }
 
