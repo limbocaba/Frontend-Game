@@ -28,12 +28,12 @@ let isAlive = setInterval(() => {
   );
   // detect collision
 
-  if (portalLeft < 50 && portalLeft > 0 && mortyTop >= 140) {
+  if (portalLeft < 30 && portalLeft > 0 && mortyTop >= 130) {
     console.log("collision");
     alert("Wubba Lubba Dub Dub, YOU LOSE!");
   }
   // detect ship collision
-  if (shipLeft < 50 && shipLeft > 0 && mortyTop == 120) {
+  if (shipLeft < 0 && shipLeft > 0 && mortyTop == 120) {
     alert("Duck next time. You LOSE!");
   }
 
