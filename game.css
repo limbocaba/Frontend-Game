@@ -5,6 +5,7 @@
   width: 600px;
   height: 200px;
   border: 1px solid white;
+  /* background-color: white; */
   background-color: #111216;
   margin: auto;
 }
@@ -38,47 +39,16 @@ body {
 
 @keyframes jump {
 
-    /* from {
-        transform: translate3d(0, 0, 0); JUMPS REALLY HIGH
-    }
-    to {
-        transform: translate3d(0, -150px, 0);
-    } */
   0% {
-    top: 150px;
+top:150px
   }
 
-  10% {
-    top: 130px;
-  }
-  20% {
-    top: 120px;
-  }
   30% {
-    top: 110px;
-  }
-  40% {
-    top: 100px;
-  }
-  50% {
-    top: 60px;
-  }
-
-  60% {
-    top: 110px;
+    top: 50px;
   }
   70% {
-    top: 120px;
+    top: 50px;
   }
-
-  80% {
-    top: 130px;
-  }
-
-  90% {
-    top: 140px;
-  }
-
   100% {
     top: 150px;
   }
@@ -128,5 +98,9 @@ body {
   top: 19px;
 
   
-  background-color: lime;
+  background-color: #111216;
 }
+
+/* .hide {
+
+} */
