@@ -3,6 +3,8 @@ const portal = document.getElementById("obstacle");
 const ship = document.getElementById("ship");
 const game = document.querySelector('.game')
 const button = document.getElementById("start-game")
+let score = document.querySelector('.js-score')
+let counter = parseInt(score.innerText);
 
 function jump() {
   if (morty.classList != "jump") {
@@ -33,11 +35,14 @@ let isAlive = setInterval(() => {
   if (portalLeft < 30 && portalLeft > 0 && mortyTop >= 130) {
     console.log("collision");
     alert("Wubba Lubba Dub Dub, YOU LOSE!");
+    counter = 0
     // game.style.background = "red"
   }
   // detect ship collision
   if (shipLeft < 30 && shipLeft > 0 && mortyTop <= 120) {
     alert("Watch your head next time. You LOSE!");
+    counter = 0
+    console.log('collision')
   }
 
   // if ship in inside div and morty is at top 120, collide
@@ -47,6 +52,9 @@ document.addEventListener("keydown", function (event) {
   jump();
 });
 
-
-
+let addPoints = setInterval(() => {
+  counter += 2
+  score.innerHTML = counter;
+  console.log(counter)
+}, 1000)
 
