@@ -87,7 +87,7 @@ top:150px
  background-image: url("RickShip.png");
  background-size: 60px 60px;
 
-  animation: block 10s infinite linear;
+  animation: block 9.3s infinite linear;
 }
 
 #detection  {
@@ -100,7 +100,3 @@ top:150px
   
   background-color: #111216;
 }
-
-/* .hide {
-
-} */
