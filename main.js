@@ -36,14 +36,14 @@ let isAlive = setInterval(() => {
   if (portalLeft < 30 && portalLeft > 0 && mortyTop >= 130) {
     console.log("collision");
     alert("Wubba Lubba Dub Dub, YOU LOSE!");
-    counter = 0
+    counter = -2
     // topText.innerText = "Game Over"
     // game.style.background = "red"
   }
   // detect ship collision
   if (shipLeft < 30 && shipLeft > 0 && mortyTop <= 120) {
     alert("Watch your head next time. You LOSE!");
-    counter = 0
+    counter = -2
     console.log('collision')
   }
 
