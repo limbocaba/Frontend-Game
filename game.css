@@ -16,6 +16,10 @@ h2 {
   font-family: 'Fjalla One', sans-serif;
 }
 
+.score {
+  font-family: 'Press Start 2P', cursive 
+}
+
 body {
   background-color: black;
   background-size: 1500px;
