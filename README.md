@@ -17,4 +17,4 @@ As of right now the game is at MVP, it functions properly and the collision mech
 - Add different levels where the background, scenery and obstacles are different(maybe even characters)
 - Create a high score div
 
-Sources: https://www.youtube.com/watch?v=i7nIutSLvdU
+References: https://www.youtube.com/watch?v=i7nIutSLvdU
