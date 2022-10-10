@@ -10,4 +10,11 @@ The goal of this project was to create a functioning game using only JavaScript,
 
 As of right now the game is at MVP, it functions properly and the collision mechanics are great. In future updates it will receive more obstacles as the game progresses, background music and perhaps even more levels!
 
+# Post MVP Goals
+
+- Add background music and sound effects
+- Add more obstacles to the game as it progresses
+- Add different levels where the background, scenery and obstacles are different(maybe even characters)
+- Create a high score div
+
 Sources: https://www.youtube.com/watch?v=i7nIutSLvdU
