@@ -5,6 +5,7 @@ const game = document.querySelector('.game')
 const button = document.getElementById("start-game")
 let score = document.querySelector('.js-score')
 let counter = parseInt(score.innerText);
+let topText = document.getElementById("title")
 
 function jump() {
   if (morty.classList != "jump") {
@@ -36,6 +37,7 @@ let isAlive = setInterval(() => {
     console.log("collision");
     alert("Wubba Lubba Dub Dub, YOU LOSE!");
     counter = 0
+    // topText.innerText = "Game Over"
     // game.style.background = "red"
   }
   // detect ship collision
